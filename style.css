@@ -111,3 +111,89 @@
   font-size: 14px;
   font-weight: 600;
 }
+.main_top_background{
+  width: 100%;
+  height: 380px;
+
+  background: url("./images/oraclebackground.png") ;
+  background-size:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.intro_container{
+  border: 1px solid red;
+  width: 150vh;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.leftrow{
+  flex:1;
+  
+}
+.leftrow img{
+  width: 25px;
+  
+}
+.rightrow img{
+  width: 25px;
+  
+}
+.intro_box_container{
+  height: 320px;
+  flex:15;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.intro_image{
+  position: absolute;
+  width: 600px;
+  height: 280px;
+  background-color: #312D2A;
+  right:  300px;
+  bottom: 40px;
+  z-index: 1;
+}
+.intro_empty{
+  flex:1;
+}
+
+.intro_box{
+  flex:1;
+
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-top: 20px;
+  margin-right: 80px;
+  z-index: 2;
+  
+}
+.rightrow{
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+.main_bottom_background{
+  width: 100%;
+  height: 557px;
+  z-index: -1;
+  background: url("./images/bottombackground.png") ;
+  background-repeat: repeat;      
+  background-size: 200px 200px;   
+  background-color: #FBF9F8;
+}
+.main_bottom_gray{
+  width: 100%;
+  height: 100%;
+  background-color: #d7d7d7;
+  opacity: 60%;
+}
+

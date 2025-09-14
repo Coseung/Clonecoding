@@ -10,18 +10,52 @@
 </head>
 <body>
     <div id="header"></div> 
-
+    <div class="main_bacground">
+    </div>
   
-     <script>
+    <script>
     fetch("header.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("header").innerHTML = data;
       });
   </script>
-  <div class="main_bacground">
+  <main class="main_container">
 
-  </div>
+  
+    <div class="main_top_background">
+      
+      <div class="intro_container">
+        <div class="leftrow">
+          <img src="./images/arrow.png" alt="">
+        </div>
+        <div class="intro_box_container"> 
+          <div class="intro_image">
+
+          </div>
+          <div class="intro_empty">
+              
+
+          </div>
+          <div class="intro_box">
+            
+
+          </div>
+          
+        </div>
+        
+        <div class="rightrow">
+            <img src="./images/rightarrow.png" alt="">
+
+        </div>
+      </div>
+    </div>
+    <div class="main_bottom_background">
+      <div class="main_bottom_gray">
+
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
