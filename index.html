@@ -157,9 +157,67 @@
     <div class="bottommenu">
       <img src="./images/menu.png" alt="">
     </div>
-    
+    <div class="examples_container">
+      <div class="example_big_title">
+        <h1>고객들이 Oracle을 신뢰하는 이유를 살펴보세요</h1>
+
+      </div>
+      <div class="brand_container">
+        <div class="example_brand">
+          <img src="./images/uber.svg" alt="우버이미지" style="padding:10px;">
+          <div class="brand_line"></div>
+        </div>
+        <div class="example_brand">
+          <img src="./images/Aonlogo.svg" alt="AON이미지" id="brand_Aon">
+          <div class="brand_line"></div>
+
+        </div>
+        <div class="example_brand">
+          <img src="./images/university.svg" alt="대학교이미지">
+          <div class="brand_line"></div>
+
+        </div>
+        <div class="example_brand">
+          <img src="./images/customerlogo-mgm-clr.svg" alt="MGM이미지" id="mgmimage">
+          <div class="brand_line"></div>
+        </div>
+        <div class="example_brand">
+          <img src="./images/customerlogo-amc-theatres-blk.svg" alt="MGM이미지" id="amcimage">
+          <div class="brand_line"></div>
+        </div>
+        <div class="example_brand">
+          <img src="./images/grant-thornton-blk.svg" alt="MGM이미지">
+          <div class="brand_line"></div>
+        </div>
+        <div class="example_brand">
+          <div style="width: 160px; height: 59px;">
+
+          </div>
+          <div class="brand_line" style="border: 2px solid rgb(190, 190, 190);"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="example_content">
+      <div class="exaple_content_box">
+        <h2>고객과의 약속을 실현하기 위해 Oracle Cloud를 선택한 Uber</h2>
+        <button>uber 사례읽기</button>
+      </div>
+      <div class="exaple_content_box_empty">
+        <h3></h3>
+
+      </div>
+    </div>
 
   </main>
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
