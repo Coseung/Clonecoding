@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+  <div id="header"></div> 
+   <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+  <div class="olyoung_body">
+
+  
+    <div class="olyoung_background" >
+      
+    </div>
+    
+    <div class="olyoung_main_container">
+      <div class="olyoung_container_title">
+        <div>
+          <p style="font-size: 12px; margin: 10px;"> Oracle 대한민국 > 고객 사례 ></p>
+        </div>
+        <div style="display: flex;">
+          <h2 style="width: 530px; flex: 7; margin: 20px; margin-top: 40px;">오라클, 올리브영에 고객 서비스 만족 위한 안정적인 클라우드 인프라 제공</h2>
+          <img src="./images/olyoung.jpg" alt="" style="height: 34px; flex: 2; margin: 100px 50px 0px  30px;">
+        </div>
+        
+        <div class="olyoung_yellowLine">
+
+        </div>
+        <div style="margin: 0 0 0 30px; font-size: 12px; width: 638px;">
+          <p>CJ올리브영(이하 올리브영)은 하이브리드 클라우드 방식의 운영 통해 대규모 데이터 효율적으로 처리하고, 다운타임 및 대기시간 없이 이벤트 진행 관리하였습니다. 이를 통해 안정적인 서비스 기반 시스템구축으로 고객 이탈 방지하고, 고객 만족도를 향상시켰습니다.
+          </p>
+        </div>
+        <div class="olyoung_main_conent_title">
+          <div style="margin: 30px;">
+            <p>“유중열 한국오라클 클라우드 사업부 부사장은 “국내 대표적인 옴니채널 플랫폼 사업자인 올리브영과의 협업은 빠르게 변화하고 있는 소비자 수요 환경에 맞춤화한 IT 인프라의 전략 접근이 비즈니스의 운영과 고객 만족도 개선에도 얼마나 큰 영향을 미칠 수 있는지 보여줄 수 있었던 업계의 모범적인 프로젝트다. 한국오라클은 올리브영이 국내를 넘어 글로벌 시장에서도 더욱 입지를 확대하여 뻗어 나갈 수 있도록 더욱 혁신적이면서도 안정적인 서비스를 제공해 나갈 것이다.”라고 말했습니다.”</p>
+          </div>
+
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <div class="olyoung_main_content">
+          <div class="olyoung_main_content_title">
+            <h3>비즈니스 당면 과제</h3>
+          </div>
+          <div style="width: 650px; font-size: 12px; margin-top: 20px;">
+            <p>소비재 리테일 업계의 온라인 판매 특성상, 특정 이벤트 기간에 이용자가 대거 몰리는 시기에도 고객이 안정적으로 서비스를 이용할 수 있도록 하기 위해 올리브영은 IT 환경을 혁신하기 위한 방안을 모색했습니다. 회사는 철저한 분석 및 검토 끝에 현재 이용 중인 데이터베이스 관리 시스템을 더욱 용이하게 클라우드에 마이그레이션 할 수 있고 온프레미스(사내구축형) 환경과 함께 퍼블릭 클라우드 서비스를 활용할 수 있는 하이브리드 클라우드 환경으로 유연하게 IT 인프라를 구축할 수 있는 전략을 채택했습니다.</p>
+          </div>
+          <div class="olyoung_main_content_title">
+            <h3>올리브영이 Oracle을 선택한 이유</h3>
+          </div>
+          <div style="width: 650px; font-size: 12px; margin-top: 20px;">
+            <p>특히 이번 클라우드 환경 운영의 장점으로 올리브영은 이용자 수 급증에도 변함없이 보장되는 안정성을 주목했습니다. 기존에는 급증하는 트랜잭션을 처리하기 위하여 동시 접속자 수를 제한하거나 대기하는 형식으로 진행하였으나, OCI 도입 후 이중화된 시스템을 동시에 운영함으로써 유입되는 고객을 모두 수용할 수 있게 됐습니다.</p>
+            <br>
+            <p>또한, 오라클은 올리브영에 실시간 데이터 통합 및 분산 지원 플랫폼을 제공하는 관리형 서비스 OCI 골든게이트(OCI GoldenGate)도 함께 제공했습니다. 이를 통해 올리브영은 별도로 컴퓨팅 환경을 할당하거나 관리하지 않고도 데이터 복제, 스트림 데이터 처리 솔루션을 설계, 실행 및 모니터링할 수 있게 되었습니다.</p>
+          </div>
+          <div class="olyoung_main_content_title">
+            <h3>결과</h3>
+          </div>
+          <div style="width: 650px; font-size: 12px; margin-top: 20px;">
+            <p>이에 따라 오라클은 OCI 데이터베이스 클라우드 서비스(DBCS) 역시 리얼 애플리케이션 클러스터(RAC)로 이중화하고 오라클 DBMS도 최신 버전으로 업그레이드를 제공할 계획입나다. 올리브영은 점진적으로 클라우드로 이관하는 작업을 가속화하는 등 지속적인 IT 혁신을 통해 더 많은 고객들이 올리브영 온라인몰을 편리하게 이용할 수 있도록 한다는 방침입니다.</p>
+            <br>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div style="margin-top: 100px;">
+          <img src="./images/olyoungpage.png" alt="올리브영 상세" style="width: 1350px;">
+      </div>
+      
+    </div>
+      
+  </div>
+  <div id="footer" style="margin-top: 150px;"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

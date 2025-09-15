@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="header"></div> 
+    </div>
+  
+    <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+  <div class="contact_hero">
+  <div class="contact_inner">
+    
+    <div class="contact_left">
+      <h1 class="contact_title">한국오라클 연락처</h1>
+
+      <div class="contact_buttons">
+        <a class="btn btn_dark" href="javascript:void(0);" id="chat_btn" role="button" aria-label="Oracle 영업 담당자와 실시간 채팅">
+          Oracle 영업 담당자와 실시간으로 채팅하기
+        </a>
+        <a class="btn btn_light" href="" target="_blank" rel="noopener noreferrer" role="button" aria-label="Oracle University 지원">
+          Oracle University 지원
+        </a>
+      </div>
+    </div>
+
+    <div class="contact_right">
+      <img
+        src="./images/call.png"
+        alt="Oracle 이미지"
+        class="contact_img"
+      />
+    </div>
+  </div>
+</div>
+<div class="inqury_main_content">
+  <h2 class="inqury_main_content_title">오라클에 문의하기</h2>
+
+  <form class="inqury_form">
+    <div class="inqury_row">
+      <label for="inqury_name" class="inqury_label">이름</label>
+      <input type="text" id="inqury_name" class="inqury_input" placeholder="이름을 입력하세요">
+    </div>
+
+    <div class="inqury_row">
+      <label for="inqury_phone" class="inqury_label">전화번호</label>
+      <input type="text" id="inqury_phone" class="inqury_input" placeholder="전화번호를 입력하세요">
+    </div>
+
+    <div class="inqury_row">
+      <label for="inqury_message" class="inqury_label">문의내용</label>
+      <textarea id="inqury_message" class="inqury_textarea" placeholder="문의 내용을 입력하세요"></textarea>
+    </div>
+
+    <div class="inqury_row_btn">
+      <button type="submit" class="inqury_btn">전송하기</button>
+    </div>
+  </form>
+</div>
+<div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
